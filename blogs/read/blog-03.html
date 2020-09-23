@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 3 Software Untuk Vicon! - Edumic</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="../../../../assets/img/logo-icn.svg" type="../image/svg" />
+  <link rel="stylesheet" href="../../assets/style/main.css" />
+</head>
+
+<body>
+  <!-- Navigasi Bar -->
+  <div class="container">
+    <nav>
+      <div class="nav-brand">
+        <img src="../../assets/img/logo-text.svg" alt="" onclick="toHomePage()" />
+      </div>
+      <div class="nav-items" id="nav">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="../../class/" class="nav-link">Class</a>
+          <a href="../../blogs/" class="nav-link active">Blog</a>
+          <a href="../../gallery/" class="nav-link">Gallery</a>
+          <a href="../../about/" class="nav-link">About</a>
+        </div>
+
+        <button class="btn-secondary" onclick="toClassPage()">
+          Try Free
+        </button>
+      </div>
+
+      <div class="burger-toggle" id="toggle-nav">
+        <div class="line l2"></div>
+        <div class="line"></div>
+        <div class="line l2"></div>
+      </div>
+    </nav>
+    <div class="navigate">
+      <a href="../../index.html">Home</a><span> /</span><a href="../index.html"> Blogs </a><span> /</span>
+      <p>Read Blog</p>
+    </div>
+    <div class="blog-title">
+      <h1>Top 3 Software Untuk Vicon!</h1>
+      <div class="card-author">
+        <div class="profile-author">
+          <img src="../../assets/img/mentor/miftah-sm.svg" alt="">
+          <div class="title-author">
+            <h5>Miftah Apriliandi</h5>
+            <p>18.45, 30 Juli 2020</p>
+          </div>
+        </div>
+        <div class="share-section">
+          <a href="https://facebook.com/sharer/sharer.php?u=edumic.smkn1subang.sch.id/blogs/read/blog-03.html"
+            target="_blank">
+            <img src="../../assets/img/icon/facebook.svg" alt="">
+          </a>
+          <a href="https://twitter.com/intent/tweet?text=edumic.smkn1subang.sch.id/blogs/read/blog-03.html"
+            target="_blank">
+            <img src="../../assets/img/icon/twitter.svg" alt="">
+          </a>
+          <a href="#" onclick="copy()">
+            <img src="../../assets/img/icon/copy.svg" alt="">
+            <div id="tootlips">Copied to clipboard</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-content">
+      <p>
+        <span style="margin-top: 24px">Skype</span>
+
+        Kamu mungkin berpikir Skype sebagai cara untuk membuat panggilan jarak jauh menggunakan komputermu, tetapi Skype
+        untuk bisnis produk yang memungkinkan kamu untuk menggunakan Skype untuk menjalankan pertemuan konferensi video.
+        Dengan Skype untuk bisnis, pertemuan web mu dapat menyertakan hingga 250 orang (dengan berlangganan Microsoft
+        Office 365). Gunakan alat untuk berbagi desktopmu dan berkolaborasi secara online secara real-time. Kamu juga
+        dapat merekam pertemuanmu.
+
+        <span style="margin-top: 24px">Zoom</span>
+
+        Software pertemuan online populer ini adalah pilihan yang cocok para pelajar karena tingkat yang paling dasar
+        gratis. Tingkat yang paling dasar, kamu dapat host hingga 100 peserta rapat hingga 40 menit. Kamu juga dapat
+        menggunakan layar berbagi untuk berkolaborasi. Dan ada kamar terbuka untuk diskusi swasta. Untuk mendapatkan
+        lebih banyak fitur, seperti Rapat terbatas durasi atau lebih peserta, pilih salah satu rencana premium mereka.
+
+        <span style="margin-top: 24px">WebEx</span>
+        Dengan software video Conference ini kamu akan menikmati banyak fitur termasuk layar berbagi, record cloud,
+        ruang pertemuan pribadi, dan banyak lagi. Jumlah orang yang dapat disertakan dalam video conferencemu tergantung
+        pada tingkat paket pembelianmu. Dengan tingkat pemula, kamu dapat menyertakan 50 peserta. Pada tingkat
+        perusahaan kamu dapat memiliki hingga 1000 peserta pertemuan. Percobaan gratis juga tersedia.
+      </p>
+    </div>
+  </div>
+  <footer style="margin-top: 92px;">2020 All Right Reserved PandeCoder</footer>
+  <input type="text" value="http://edumic.smkn1subang.sch.id/blogs/read/blog-03.html" id="link"
+    style="opacity: 0; z-index: -999; cursor: default;">
+  <script src="../../assets/script/app.js"></script>
+
+  <script>
+    function copy() {
+
+      var copyText = document.getElementById("link");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+
+      document.getElementById('tootlips').style.display = "block";
+      document.getElementById('tootlips').classList.add("smooth-transition");
+
+      setInterval(() => {
+        document.getElementById('tootlips').classList.add("smooth-transition-out");
+
+      }, 700);
+      setTimeout(() => {
+
+        document.getElementById('tootlips').style.display = "none";
+      }, 1000);
+    }
+  </script>
+</body>
+
+</html>

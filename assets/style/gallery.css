@@ -1,0 +1,152 @@
+.toggler-nav {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
+
+}
+
+.toggler-nav a {
+    color: #B0B0B0;
+    text-decoration: none;
+    padding: 12px 34px;
+}
+
+a.active-tab {
+    background-color: #FF984E;
+    color: #fff;
+    padding: 12px 34px;
+}
+
+.box-gallery {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 28px;
+    margin-top: 42px;
+}
+
+.img-shot-box img {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-shot-box {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-shot .description-box {
+    padding: 22px 0;
+}
+
+.box-shot .description-box h1 {
+    color: #272727;
+    font-size: 32px;
+    font-weight: 550;
+}
+
+.box-shot .description-box p {
+    color: #B0B0B0;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+
+
+
+.fadeIn {
+    animation: animationFade 0.5s linear;
+}
+
+@keyframes animationFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.show-img-shot {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 100;
+}
+
+#close-toggle {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    color: #fff;
+    background-color: #ad4343;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+
+.show-img-shot img {
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    #close-toggle {
+        right: 12px;
+    }
+
+    .toggler-nav {
+        width: 100%;
+        overflow: scroll;
+        text-align: center;
+        height: 50px;
+    }
+
+    .toggler-nav a {
+        text-decoration: none;
+        padding: 8px 24px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .box-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .box-shot {
+        margin-bottom: 24px;
+    }
+
+    .img-shot-box {
+        height: auto;
+    }
+
+    .show-img-shot img {
+        height: auto;
+        width: 100%;
+    }
+}

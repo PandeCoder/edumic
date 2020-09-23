@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/img/logo-icn.svg" type="image/svg" />
+  <link rel="stylesheet" href="../assets/style/main.css" />
+  <style>
+    .card-class-row {
+      grid-template-rows: auto;
+    }
+  </style>
+  <title>Edumic | Education Through Pandemic</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navigasi Bar -->
+    <nav>
+      <div class="nav-brand">
+        <img src="../assets/img/logo-text.svg" alt="" onclick="toHomePage()" />
+      </div>
+      <div class="nav-items" id="nav">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link active">Class</a>
+          <a href="../blogs/" class="nav-link">Blog</a>
+          <a href="../gallery/" class="nav-link">Gallery</a>
+          <a href="../about/" class="nav-link">About</a>
+        </div>
+
+        <button class="btn-secondary">
+          Try Free
+        </button>
+      </div>
+
+      <div class="burger-toggle" id="toggle-nav">
+        <div class="line l2"></div>
+        <div class="line"></div>
+        <div class="line l2"></div>
+      </div>
+    </nav>
+
+    <!-- Class List -->
+    <section class="card-class mt-nav" style="margin-top: 50px; height: auto;">
+      <div class="form-list">
+        <div class="form-subscribe form-search">
+          <input type="text" class="email-input" placeholder="Cari kelas / mentor..." id="searchValue"
+            onkeyup="myFunction()" />
+          <button class="submit-email" style="padding: 0 20px;">
+            <img src="../assets/img/search-icn.svg" alt="" style="margin-top: 6px; width: 80%;" />
+          </button>
+        </div>
+      </div>
+      <div class="card-class-row" style="margin-top: 80px;">
+        <div class="card-classes">
+          <a href="detail/fullstack-website-designer.html" style="text-decoration: none;">
+            <div class="thumbnail-class">
+              <img src="../assets/img/tn-class/thumbnail-01.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>Full-stack Web Designer</h1>
+              <p>Web Development</p>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="../assets/img/mentor/alvin-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Alvin Adisatria</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card-classes">
+          <a href="detail/laravel-dasar.html" style="text-decoration: none;">
+            <div class="thumbnail-class">
+              <img src="../assets/img/tn-class/thumbnail-02.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>Dasar Laravel v7</h1>
+              <p>Web Development</p>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="../assets/img/mentor/ahmad-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Ahmad Alfarizki</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="card-classes">
+          <a href="detail/premiere-dasar.html" style="text-decoration: none;">
+            <div class="thumbnail-class">
+              <img src="../assets/img/tn-class/thumbnail-03.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>Dasar Adobe Premiere</h1>
+              <p>Film Making</p>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="../assets/img/mentor/miftah-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Miftah Apriliandi</h3>
+                <p>Director Video</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+      </div>
+    </section>
+
+    <div class="heading-title" style="margin-top: -60px;" id="cmn-soon">
+      <p>New Classes</p>
+      <h1>Coming Soon<span>.</span></h1>
+    </div>
+    <div class="card-class-row" style="margin-bottom: 70px;">
+      <div class="card-classes" style="filter: grayscale(1);">
+        <a style="text-decoration: none;">
+          <div class="thumbnail-class">
+            <img src="../assets/img/tn-class/thumbnail-04.png" alt="" />
+          </div>
+          <div class="title-class">
+            <h1>Personal Branding</h1>
+            <p>Digital Marketing</p>
+          </div>
+          <div class="line-gap"></div>
+          <div class="mentor-class">
+            <img src="../assets/img/mentor/alvin-sm.svg" alt="" />
+            <div class="mini-bio">
+              <h3>Alvin Adisatria</h3>
+              <p>Web Developer</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- To Up -->
+    <div class="ellipse" id="pop-scroll-up">
+      <img src="../assets/img/arrow-left.svg" alt="up" style="transform: rotate(90deg);">
+    </div>
+    <footer>
+      2020 All Right Reserved PandeCoder
+    </footer>
+  </div>
+
+  <script src="../assets/script/app.js"></script>
+</body>
+
+</html>

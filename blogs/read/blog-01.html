@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3 Profesi Ini Bisa Kerja Jarak Jauh! - Edumic</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="../../../../assets/img/logo-icn.svg" type="../image/svg" />
+  <link rel="stylesheet" href="../../assets/style/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navigasi Bar -->
+    <div class="container">
+      <nav>
+        <div class="nav-brand">
+          <img src="../../assets/img/logo-text.svg" alt="" onclick="toHomePage()" />
+        </div>
+        <div class="nav-items" id="nav">
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="../../class/" class="nav-link">Class</a>
+            <a href="../../blogs/" class="nav-link active">Blog</a>
+            <a href="../../gallery/" class="nav-link">Gallery</a>
+            <a href="../../about/" class="nav-link">About</a>
+          </div>
+
+          <button class="btn-secondary" onclick="toClassPage()">
+            Try Free
+          </button>
+        </div>
+
+        <div class="burger-toggle" id="toggle-nav">
+          <div class="line l2"></div>
+          <div class="line"></div>
+          <div class="line l2"></div>
+        </div>
+      </nav>
+      <div class="navigate">
+        <a href="../../index.html">Home</a><span> /</span><a href="../index.html"> Blogs </a><span> /</span>
+        <p>Read Blog</p>
+      </div>
+      <div class="blog-title">
+        <h1>3 Profesi Ini Bisa Kerja Jarak Jauh!</h1>
+        <div class="card-author">
+          <div class="profile-author">
+            <img src="../../assets/img/mentor/ahmad-sm.svg" alt="">
+            <div class="title-author">
+              <h5>Ahmad Alfarizki</h5>
+              <p>Sen, 24 Agu 2020</p>
+            </div>
+          </div>
+          <div class="share-section">
+            <a href="https://facebook.com/sharer/sharer.php?u=edumic.smkn1subang.sch.id/blogs/read/blog-01.html"
+              target="_blank">
+              <img src="../../assets/img/icon/facebook.svg" alt="">
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=edumic.smkn1subang.sch.id/blogs/read/blog-01.html"
+              target="_blank">
+              <img src="../../assets/img/icon/twitter.svg" alt="">
+            </a>
+            <a href="#" onclick="copy()">
+              <img src="../../assets/img/icon/copy.svg" alt="">
+              <div id="tootlips">Copied to clipboard</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-content">
+        <p>
+          Pada saat pandemi ini banyak pekerjaan yang diliburkan dan ada juga yang secara jarak jauh loh.
+          Nah berikut ini 3 profesi yang bisa Anda laukan secara jarak jauh tanpa harus ngantor atau bertemu klien
+          setiap hari. Penasaran? Check this out,
+
+          <span style="margin-top: 24px;">1. Desainer</span>
+          Pekerjaan ini tentunya sudah banyak digeluti orang. Seseorang biasanya bekerja di sebuah perusahaan atau dapat
+          juga dilakukan secara freelance untuk beberapa klien. Saingannya cukup banyak, namun banyak orang juga yang
+          membutuhkan jasa desain seperti logo, feed instagram dan lain sebagainya.
+
+          <span style="margin-top: 24px;">2. Programmer</span>
+          Tentunya profesi ini bisa dilakukan secara jarak jauh, asalkan Anda punya komputer atau laptop. Salah satunya
+          Anda bisa menjadi sebagai Web Developer yang saat ini hampir setiap bisnis kini membutuhkan situs web, begitu
+          juga dengan Aplikasi Android.
+
+          <span style="margin-top: 24px;">3. Penerjemah</span>
+          Penerjemah juga merupakan pekerjaan yang dapat dilakukan di rumah. Jika Anda mahir dalam banyak bahasa,
+          mungkin pekerjaan ini dapat menjadi pilihan Anda, sebagai penerjemah, kita bisa bekerja secara online untuk
+          sebuah perusahaan penerjemahaan atau menerjemahkan berita dan artikel, halaman web, hingga buku.
+        </p>
+      </div>
+    </div>
+    <footer style="margin-top: 92px;">2020 All Right Reserved PandeCoder</footer>
+    <input type="text" value="http://edumic.smkn1subang.sch.id/blogs/read/blog-01.html" id="link"
+      style="opacity: 0; z-index: -999; cursor: default;">
+
+    <script src="../../assets/script/app.js"></script>
+    <script>
+      function copy() {
+
+        var copyText = document.getElementById("link");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+
+        document.getElementById('tootlips').style.display = "block";
+        document.getElementById('tootlips').classList.add("smooth-transition");
+
+        setInterval(() => {
+          document.getElementById('tootlips').classList.add("smooth-transition-out");
+
+        }, 700);
+        setTimeout(() => {
+
+          document.getElementById('tootlips').style.display = "none";
+        }, 1000);
+      }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo-icn.svg" type="image/svg">
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <link rel="stylesheet" href="../assets/style/gallery.css">
+    <title>Edumic | Education Through Pandemic</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigasi Bar -->
+        <nav>
+            <div class="nav-brand">
+                <img src="../assets/img/logo-text.svg" alt="">
+            </div>
+
+            <div class="nav-items" id="nav">
+
+                <div class="nav-links">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../class/" class="nav-link">Class</a>
+                    <a href="../blogs/" class="nav-link">Blog</a>
+                    <a href="index.html" class="nav-link active">Gallery</a>
+                    <a href="../about/" class="nav-link">About</a>
+                </div>
+
+                <button class="btn-secondary">
+                    Try Free
+                </button>
+            </div>
+
+            <div class="burger-toggle" id="toggle-nav">
+                <div class="line l2"></div>
+                <div class="line"></div>
+                <div class="line l2"></div>
+            </div>
+        </nav>
+
+
+        <!-- Nav toggler -->
+
+
+        <div class="toggler-nav mt-nav">
+            <a href="#" class="active-tab" id="all-tab">See All</a>
+            <a href="#" id="web-design-tab">Web Design</a>
+            <a href="#" id="mobile-design-tab">Mobile Apps</a>
+            <a href="#" id="branding-design-tab">Branding</a>
+            <a href="#" id="threed-design-tab">3D Design</a>
+        </div>
+
+
+        <div class="box-gallery ">
+
+            <div class="box-shot item mobile-design-shot">
+                <div class="img-shot-box">
+                    <img src="../assets/img/gallery/Dribbble Shot HD - 1 1.png" alt="">
+
+                </div>
+                <div class="description-box">
+                    <h1>Sim Card Management</h1>
+                    <p>UI/UX Design, Mobile Apps</p>
+                </div>
+            </div>
+            <div class="box-shot item web-design-shot">
+                <div class="img-shot-box">
+
+                    <img src="../assets/img/gallery/Dribbble Shot HD - 3 1.png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>Crewweb Agency</h1>
+                    <p>UI/UX Design, Web Design</p>
+                </div>
+            </div>
+
+            <div class="box-shot item mobile-design-shot">
+                <div class="img-shot-box">
+
+                    <img src="../assets/img/gallery/Dribbble Shot HD - 2 (3) 1.png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>Banana's Fintech</h1>
+                    <p>UI/UX Design, Mobile Design</p>
+                </div>
+            </div>
+            <div class="box-shot item mobile-design-shot">
+                <div class="img-shot-box">
+                    <img src="../assets/img/gallery/Lawan Korona 1.png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>Lawan Corona</h1>
+                    <p>UI/UX Design, Mobile Design</p>
+                </div>
+            </div>
+            <div class="box-shot item mobile-design-shot">
+                <div class="img-shot-box">
+                    <img src="../assets/img/gallery/Instagram Post - 1.png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>Dompet Kamu</h1>
+                    <p>UI/UX Design, Mobile Design</p>
+                </div>
+            </div>
+
+            <div class="box-shot item branding-design-shot">
+                <div class="img-shot-box">
+                    <img src="../assets/img/gallery/Frame 6.png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>BUCIN</h1>
+                    <p>Logo Design, Branding</p>
+                </div>
+            </div>
+            <div class="box-shot item web-design-shot">
+                <div class="img-shot-box">
+
+                    <img src="../assets/img/gallery/Dribbble Hijrah.png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>Hijrah</h1>
+                    <p>UI/UX Design, Web Design</p>
+                </div>
+            </div>
+            <div class="box-shot item web-design-shot">
+                <div class="img-shot-box">
+
+                    <img src="../assets/img/gallery/Dribbble Crewweb.png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>CREWWEB Team </h1>
+                    <p>UI/UX Design, Web Design</p>
+                </div>
+            </div>
+            <div class="box-shot item threed-design-shot web-design-shot">
+                <div class="img-shot-box">
+
+                    <img src="../assets/img/gallery/Frame 3 (1).png" alt="">
+                </div>
+                <div class="description-box">
+                    <h1>Collecttoy</h1>
+                    <p>3D Design, Web Design</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            2020 All Right Reserved PandeCoder
+        </footer>
+
+        <div class="show-img-shot">
+            <div id="close-toggle">CLOSE X</div>
+            <img src="" alt="">
+        </div>
+
+
+    </div>
+    <!-- To Up -->
+    <div class="ellipse" id="pop-scroll-up">
+        <img src="../assets/img/arrow-left.svg" alt="up" style="transform: rotate(90deg);">
+    </div>
+
+    <script src="../assets/script/app.js"></script>
+
+    <script>
+        const webDesignTab = document.getElementById('web-design-tab');
+        const mobileDesignTab = document.getElementById('mobile-design-tab');
+        const brandingDesignTab = document.getElementById('branding-design-tab');
+        const threedDesignTab = document.getElementById('threed-design-tab');
+        const allTab = document.getElementById('all-tab');
+        const webDesignShot = document.querySelectorAll('.box-shot.web-design-shot');
+        const mobileDesignShot = document.querySelectorAll('.box-shot.mobile-design-shot');
+        const brandingDesignShot = document.querySelectorAll('.box-shot.branding-design-shot');
+        const threedDesignShot = document.querySelectorAll('.box-shot.threed-design-shot');
+        const shotBox = document.querySelectorAll('.box-shot');
+        const shotBoxImg = document.querySelectorAll('.box-shot img');
+        const showShot = document.getElementsByClassName('show-img-shot')[0];
+        const imgShow = document.querySelector('.show-img-shot img');
+        const closeToggle = document.getElementById('close-toggle');
+
+
+
+        allTab.addEventListener('click', function () {
+            shotBox.forEach(showAll = (e) => {
+                e.style.display = "block";
+                e.classList.add('fadeIn');
+                setTimeout(() => {
+                    e.classList.remove('fadeIn');
+
+                }, 500);
+            });
+        })
+
+
+        webDesignTab.addEventListener('click', function () {
+            shotBox.forEach(dNone = (n) => {
+                n.style.display = "none";
+            });
+
+            for (let index = 0; index < webDesignShot.length; index++) {
+                const element = webDesignShot[index];
+                element.style.display = "block"
+                element.classList.add('fadeIn');
+                setTimeout(() => {
+                    element.classList.remove('fadeIn');
+
+                }, 500);
+            }
+        });
+        mobileDesignTab.addEventListener('click', function () {
+            shotBox.forEach(dNone = (n) => {
+                n.style.display = "none";
+            });
+
+            for (let index = 0; index < mobileDesignShot.length; index++) {
+                const element = mobileDesignShot[index];
+                element.style.display = "block"
+                element.classList.add('fadeIn');
+                setTimeout(() => {
+                    element.classList.remove('fadeIn');
+
+                }, 500);
+            }
+        });
+        brandingDesignTab.addEventListener('click', function () {
+            shotBox.forEach(dNone = (n) => {
+                n.style.display = "none";
+            });
+
+            for (let index = 0; index < brandingDesignShot.length; index++) {
+                const element = brandingDesignShot[index];
+                element.style.display = "block"
+                element.classList.add('fadeIn');
+                setTimeout(() => {
+                    element.classList.remove('fadeIn');
+
+                }, 500);
+            }
+        });
+        threedDesignTab.addEventListener('click', function () {
+            shotBox.forEach(dNone = (n) => {
+                n.style.display = "none";
+            });
+
+            for (let index = 0; index < threedDesignShot.length; index++) {
+                const element = threedDesignShot[index];
+                element.style.display = "block"
+                element.classList.add('fadeIn');
+                setTimeout(() => {
+                    element.classList.remove('fadeIn');
+
+                }, 500);
+            }
+        });
+
+        const toggler = document.getElementsByClassName('toggler-nav')[0];
+        const togglerLink = document.querySelectorAll('.toggler-nav a');
+
+        togglerLink.forEach(func = (e) => {
+            e.addEventListener('click', function () {
+                for (let index = 0; index < togglerLink.length; index++) {
+                    const element = togglerLink[index];
+                    element.classList.remove('active-tab');
+
+                }
+                this.classList.add('active-tab');
+                this.classList.add('fadeIn');
+                setTimeout(() => {
+                    this.classList.remove('fadeIn');
+
+                }, 500);
+            });
+        });
+
+        shotBoxImg.forEach(func = (e) => {
+
+            e.addEventListener('click', function () {
+                showShot.style.display = 'flex';
+
+                var imgLink = this.getAttribute("src");
+                imgShow.setAttribute("src", imgLink)
+
+            })
+            closeToggle.addEventListener('click', function () {
+                showShot.style.display = 'none';
+            })
+
+
+        });
+
+        document.onkeydown = function (evnt) {
+            evnt = evnt || window.event;
+            if (evnt.keyCode == 27) {
+                showShot.style.display = 'none';
+            }
+        };
+
+
+        window.addEventListener('scroll', function (e) {
+            const scrollBtn = document.getElementById("pop-scroll-up");
+            scrollBtn.addEventListener('click', function () {
+                window.location.href = "#"
+            });
+            yPos = window.scrollY;
+            if (yPos > 600) {
+                scrollBtn.style.display = "flex"
+            } else {
+                scrollBtn.style.display = "none"
+            }
+        });
+    </script>
+</body>
+
+</html>

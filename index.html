@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="assets/img/logo-icn.svg" type="image/svg" />
+  <link rel="stylesheet" href="assets/style/main.css" />
+  <link rel="stylesheet" href="./class/detail/style/classroom.css" />
+  <title>Edumic | Education Through Pandemic</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navigasi Bar -->
+    <nav>
+      <div class="nav-brand">
+        <img src="assets/img/logo-text.svg" alt="" onclick="toHomePage()" />
+      </div>
+      <div class="nav-items" id="nav">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="./class/" class="nav-link">Class</a>
+          <a href="./blogs/" class="nav-link">Blog</a>
+          <a href="./gallery/" class="nav-link">Gallery</a>
+          <a href="./about/" class="nav-link">About</a>
+        </div>
+
+        <button class="btn-secondary" onclick="toClassPage()">
+          Try Free
+        </button>
+      </div>
+
+      <div class="burger-toggle" id="toggle-nav">
+        <div class="line l2"></div>
+        <div class="line"></div>
+        <div class="line l2"></div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section mt-nav">
+      <div class="row-hero">
+        <div class="column-1-hero">
+          <h1 class="hero-heading">
+            Place to develop your future<span>.</span>
+          </h1>
+          <p class="text-p-hero">
+            Membangun SDM di era digital 4.0 untuk masa depan yang lebih baik.
+          </p>
+
+          <div class="form-subscribe">
+            <input type="text" class="email-input" id="email-value" placeholder="Ketikkan Email..." />
+            <button class="submit-email" id="">Join</button>
+          </div>
+        </div>
+        <div class="column-2-hero">
+          <img src="assets/img/fill-blue.svg" alt="" class="bg-hero" />
+          <img src="assets/img/mock-up.svg" alt="" class="mock-up" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand -->
+
+    <section class="brand">
+      <div class="brand-img" style="margin: 0">
+        <img src="assets/img/brand-1.svg" alt="" />
+      </div>
+      <div class="brand-img">
+        <img src="assets/img/brand-3.svg" alt="" />
+      </div>
+      <div class="brand-img">
+        <img src="assets/img/brand-2.svg" alt="" style="margin-top: -20px" />
+      </div>
+      <div class="brand-img">
+        <img src="assets/img/brand-4.svg" alt="" />
+      </div>
+    </section>
+
+    <!-- class highlight -->
+
+    <section class="card-class">
+      <div class="heading-title">
+        <p>New Classes</p>
+        <h1>Productive Time<span>.</span></h1>
+      </div>
+      <div class="card-class-row">
+        <a href="./class/detail/fullstack-website-designer.html" style="text-decoration: none">
+          <div class="card-classes">
+            <div class="thumbnail-class">
+              <img src="assets/img/tn-class/thumbnail-01.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>Full-stack Web Designer</h1>
+              <p>Web Development</p>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="assets/img/mentor/alvin-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Alvin Adisatria</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="./class/detail/laravel-dasar.html" style="text-decoration: none">
+          <div class="card-classes">
+            <div class="thumbnail-class">
+              <img src="assets/img/tn-class/thumbnail-02.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>Dasar Laravel v7</h1>
+              <p>Web Development</p>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="assets/img/mentor/ahmad-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Ahmad Alfarizki</h3>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="./class/detail/premiere-dasar.html" style="text-decoration: none">
+          <div class="card-classes">
+            <div class="thumbnail-class">
+              <img src="assets/img/tn-class/thumbnail-03.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>Dasar Adobe Premiere</h1>
+              <p>Film Making</p>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="assets/img/mentor/miftah-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Miftah Apriliandi</h3>
+                <p>Director Video</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="action-more">
+        <button class="btn-secondary" onclick="toClassPage()">
+          See More
+        </button>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section class="features-card">
+      <div class="description-col">
+        <div class="heading-title">
+          <p>Our Features</p>
+          <h1>Upgrade your skills<span>.</span></h1>
+        </div>
+
+        <p class="paragraf">
+          Misi kami adalah meningkatkan SDM agar dapat menunjang dan mengikuti
+          di era digital 4.0
+        </p>
+
+        <button class="btn-primary" onclick="toAbout()">Read More</button>
+      </div>
+      <div class="icon-features">
+        <div class="card-icn">
+          <div class="circle">
+            <img src="assets/img/icon/web.svg" alt="" />
+          </div>
+          <h2>Web Development</h2>
+        </div>
+        <div class="card-icn">
+          <div class="circle">
+            <img src="assets/img/icon/video.svg" alt="" />
+          </div>
+          <h2>Video Production</h2>
+        </div>
+        <div class="card-icn">
+          <div class="circle">
+            <img src="assets/img/icon/pict.svg" alt="" />
+          </div>
+          <h2>Graphic Design</h2>
+        </div>
+        <div class="card-icn">
+          <div class="circle">
+            <img src="assets/img/icon/graphic.svg" alt="" />
+          </div>
+          <h2>Digital Marketing</h2>
+        </div>
+        <div class="card-icn">
+          <div class="circle">
+            <img src="assets/img/icon/device.svg" alt="" />
+          </div>
+          <h2>Responsive Design</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+
+    <section class="card-class">
+      <div class="heading-title">
+        <p>Blog</p>
+        <h1>Weekly Blog<span>.</span></h1>
+      </div>
+
+      <a href="./blogs/read/blog-02.html" style="text-decoration: none;">
+
+        <div class="card-class-row">
+          <div class="card-classes">
+            <div class="thumbnail-class">
+              <img src="assets/img/tn-class/thumbnail-blog-01.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>4 Tips Dapat Job Saat Saat Pandemik</h1>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="assets/img/mentor/alvin-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Alvin Adisatria</h3>
+                <p>18.30, 15 Juli 2020</p>
+              </div>
+              <button class="arr-action">
+                <img src="assets/img/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+      </a>
+      <a href="./blogs/read/blog-01.html" style="text-decoration: none;">
+        <div class="card-classes">
+          <div class="thumbnail-class">
+            <img src="assets/img/tn-class/thumbnail-blog-02.png" alt="" />
+          </div>
+          <div class="title-class">
+            <h1>3 Profesi Ini Bisa Kerja Jarak Jauh!</h1>
+          </div>
+          <div class="line-gap"></div>
+          <div class="mentor-class">
+            <img src="assets/img/mentor/ahmad-sm.svg" alt="" />
+            <div class="mini-bio">
+              <h3>Ahmad Alfarizki</h3>
+              <p>20.00, 22 Juli 2020</p>
+            </div>
+            <button class="arr-action">
+              <img src="assets/img/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </a>
+      <a href="./blogs/read/blog-03.html" style="text-decoration: none;">
+        <div class="card-classes">
+          <div class="thumbnail-class">
+            <img src="assets/img/tn-class/thumbnail-blog-03.png" alt="" />
+          </div>
+          <div class="title-class">
+            <h1>Top 3 Software Untuk Vicon!</h1>
+          </div>
+          <div class="line-gap"></div>
+          <div class="mentor-class">
+            <img src="assets/img/mentor/miftah-sm.svg" alt="" />
+            <div class="mini-bio">
+              <h3>Miftah Apriliandi</h3>
+              <p>18.45, 30 Juli 2020</p>
+            </div>
+            <button class="arr-action">
+              <img src="assets/img/arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </a>
+  </div>
+
+  <div class="action-more">
+    <button class="btn-secondary" onclick="toBlogPage()">See More</button>
+  </div>
+  </section>
+  </div>
+
+  <footer>2020 All Right Reserved PandeCoder</footer>
+
+  <!-- Card Popup -->
+  <div class="modal-join" style="display: none">
+    <div class="card-modal" style="height: 36vh">
+      <h4 id="ifError">Email Berhasil Terdaftar</h4>
+      <p>
+        Email <span id="email-user"></span> akan mendapatkan update blog,
+        kelas dan webinar terbaru.
+      </p>
+      <div class="cta-box">
+        <a href="#"> <button class="btn-secondary-telegram">Close</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- To Up -->
+  <div class="ellipse" id="pop-scroll-up">
+    <img src="assets/img/arrow-left.svg" alt="up" style="transform: rotate(90deg);">
+  </div>
+  <script src="assets/script/app.js"></script>
+</body>
+
+</html>

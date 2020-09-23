@@ -1,0 +1,161 @@
+.background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 60vh;
+    overflow: hidden;
+    z-index: -99;
+}
+
+.background img {
+    width: 100%;
+    position: absolute;
+    z-index: -99;
+}
+
+.background::after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(180deg, rgba(70, 117, 153, 0.48) -60.43%, #467599 100%);
+    backdrop-filter: blur(5px);
+    height: 60vh;
+    width: 100%;
+
+}
+
+.nav-link.active::before {
+    background-color: #FC954B;
+}
+
+.title-jumbo {
+    height: 34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.title-jumbo h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.title-jumbo p {
+    font-size: 24px;
+    margin-top: 14px;
+}
+
+.title-jumbo p a {
+    font-size: 24px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.row-details {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    grid-row: 1fr;
+    column-gap: 20px;
+}
+
+.video-embeed {
+    height: 46vh;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.section-desc {
+    margin-top: 44px;
+}
+
+.section-desc h1 {
+    font-size: 36px;
+    color: #304C61;
+    font-weight: 600;
+}
+
+.section-desc p {
+    margin-top: 24px;
+    color: #5b5b5b;
+    line-height: 32px;
+}
+
+.tools-req {
+    margin-top: 24px;
+}
+
+.tools-req img {
+    margin-right: 24px;
+}
+
+.box-preview {
+    background-color: #fff;
+    padding: 38px;
+    color: #272727;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.box-preview h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.content-preview {
+    margin-top: 38px;
+}
+
+.box-content {
+    padding: 24px 20px;
+    background-color: #F8F8F8;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+@media (max-width : 600px) {
+    .background img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        z-index: -99;
+    }
+
+    .nav-items {
+        background-color: #304c6169;
+        backdrop-filter: blur(4px);
+    }
+
+    .title-jumbo h1 {
+        font-size: 36px;
+    }
+
+    .title-jumbo p {
+        font-size: 16px;
+    }
+
+    .row-details {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr;
+    }
+
+    .video-embeed {
+        height: 30vh;
+    }
+
+    .section-desc h1 {
+        font-size: 28px;
+    }
+
+    .box-preview {
+        margin-top: 40px;
+    }
+
+    .title-jumbo p a {
+        font-size: 16px;
+    }
+}

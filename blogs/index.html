@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../assets/img/logo-icn.svg" type="image/svg" />
+  <link rel="stylesheet" href="../assets/style/main.css" />
+  <title>Edumic | Education Through Pandemic</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Navigasi Bar -->
+    <nav>
+      <div class="nav-brand">
+        <img src="../assets/img/logo-text.svg" alt="" onclick="toHomePage()" />
+      </div>
+      <div class="nav-items" id="nav">
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link">Home</a>
+          <a href="../class/" class="nav-link">Class</a>
+          <a href="index.html" class="nav-link active">Blog</a>
+          <a href="../gallery/" class="nav-link">Gallery</a>
+          <a href="../about/" class="nav-link">About</a>
+        </div>
+
+        <button class="btn-secondary">
+          Try Free
+        </button>
+      </div>
+
+      <div class="burger-toggle" id="toggle-nav">
+        <div class="line l2"></div>
+        <div class="line"></div>
+        <div class="line l2"></div>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+
+    <section class="card-class mt-nav" style="margin-top: 40px; height: 100%;">
+      <div class="heading-title">
+        <p>Blog</p>
+        <h1>Weekly Blog<span>.</span></h1>
+      </div>
+      <div class="card-class-row">
+        <a href="./read/blog-01.html" style="text-decoration: none;">
+          <div class="card-classes">
+            <div class="thumbnail-class">
+              <img src="../assets/img/tn-class/thumbnail-blog-02.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>3 Profesi Ini Bisa Kerja Jarak Jauh!</h1>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="../assets/img/mentor/ahmad-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Ahmad Alfarizki</h3>
+                <p>18.30, 15 Juli 2020</p>
+              </div>
+              <button class="arr-action">
+                <img src="../assets/img/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </a>
+
+        <a href="./read/blog-02.html" style="text-decoration: none;">
+          <div class="card-classes">
+            <div class="thumbnail-class">
+              <img src="../assets/img/tn-class/thumbnail-blog-01.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>4 Tips Dapat Job Saat Saat Pandemik</h1>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="../assets/img/mentor/alvin-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Alvin Adisatria</h3>
+                <p>18.45, 20 Juli 2020</p>
+              </div>
+              <button class="arr-action">
+                <img src="../assets/img/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </a>
+        <a href="./read/blog-03.html" style="text-decoration: none;">
+          <div class="card-classes">
+            <div class="thumbnail-class">
+              <img src="../assets/img/tn-class/thumbnail-blog-03.png" alt="" />
+            </div>
+            <div class="title-class">
+              <h1>Top 3 Software Untuk Vicon!</h1>
+            </div>
+            <div class="line-gap"></div>
+            <div class="mentor-class">
+              <img src="../assets/img/mentor/miftah-sm.svg" alt="" />
+              <div class="mini-bio">
+                <h3>Miftah Apriliandi</h3>
+                <p>18.45, 30 Juli 2020</p>
+              </div>
+              <button class="arr-action">
+                <img src="../assets/img/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </a>
+
+
+
+
+    </section>
+  </div>
+  <!-- To Up -->
+  <div class="ellipse" id="pop-scroll-up">
+    <img src="../assets/img/arrow-left.svg" alt="up" style="transform: rotate(90deg);">
+  </div>
+  <footer>
+    2020 All Right Reserved PandeCoder
+  </footer>
+
+  <script src="../assets/script/app.js"></script>
+  <script>
+    window.addEventListener('scroll', function (e) {
+      const scrollBtn = document.getElementById("pop-scroll-up");
+      scrollBtn.addEventListener('click', function () {
+        window.location.href = "#"
+      })
+      yPos = window.scrollY;
+
+      if (yPos > 600) {
+        scrollBtn.style.display = "flex"
+      } else {
+        scrollBtn.style.display = "none"
+      }
+    });
+  </script>
+</body>
+
+</html>

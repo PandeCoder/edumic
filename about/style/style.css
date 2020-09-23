@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p,
+a,
+button {
+    font-size: 16px;
+}
+
+body {
+    background-color: #fbfbfb !important;
+    overflow-x: hidden;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+nav {
+    height: 92px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    margin-right: 68px;
+    color: #272727;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link.active {
+    font-weight: 500;
+    color: #467599;
+}
+
+.nav-link.active::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #467599;
+    position: absolute;
+    margin: 24px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/*  Navbar toggle  */
+
+.burger-toggle {
+    display: none;
+}
+
+.line {
+    height: 3px;
+    width: 24px;
+    background-color: #467599;
+    margin-bottom: 4px;
+}
+
+/* Button */
+
+button.btn-secondary {
+    padding: 20px 56px;
+    font-weight: 500;
+    color: #467599;
+    background-color: transparent;
+    border: 1.5px solid #467599;
+}
+
+button.btn-primary {
+    padding: 20px 56px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #FC954B;
+    border: none;
+}
+
+button.arr-action {
+    background-color: #FC954B;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 24px;
+    border: 0;
+    box-shadow: 0px 2px 10px rgba(252, 149, 75, 0.38);
+    border-radius: 50%;
+}
+
+button.arr-action img {
+    margin-left: 12px;
+}
+
+.about h1 {
+    color: #304C61;
+    font-size: 34px;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 16px;
+    margin-top: 60px;
+}
+
+.about p {
+    font-size: 16px;
+    width: 70%;
+    line-height: 28px;
+    color: #272727;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    font-size: 18px;
+    font-weight: 600;
+    color: #304C61;
+    bottom: 0;
+}
+
+.card-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 16px;
+}
+
+.col-card {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 18px;
+}
+
+.img-mentor {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #304C61;
+    height: 40vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-mentor img {
+    width: 100%;
+}
+
+.col-card h3 {
+    font-size: 24px;
+    color: #304C61;
+    margin-top: 42vh;
+}
+
+.col-card p {
+    padding: 4px 0;
+    color: #5b5b5b;
+}
+
+.row-title {
+    margin-top: 15vh;
+    margin-bottom: 4vh;
+}
+
+.row-title h1 {
+    color: #304C61;
+    font-size: 34px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.row-title p {
+    font-size: 16px;
+    width: 70%;
+    line-height: 28px;
+    color: #272727;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .card-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr);
+        row-gap: 24px;
+    }
+
+    .row-title p,
+    .about p {
+        width: 100%;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .burger-toggle {
+        display: block;
+        z-index: 99;
+    }
+
+    .nav-items {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        left: 50%;
+        top: -100%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        width: 100%;
+        height: 60vh;
+        padding-top: 92px;
+        padding-bottom: 24px;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+        transition: all 1s;
+        z-index: 98;
+    }
+
+    .nav-active {
+        top: 0;
+    }
+
+    .nav-link {
+        margin-right: 0;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 70%;
+    }
+
+    nav button {
+        width: 80% !important;
+    }
+}

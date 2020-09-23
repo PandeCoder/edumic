@@ -1,0 +1,187 @@
+* {
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.navigate {
+    padding: 28px 0;
+}
+
+.navigate a {
+    color: #304C61;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navigate p {
+    display: inline;
+}
+
+.navigate a:hover {
+    text-decoration: underline;
+}
+
+.blog-title h1 {
+    color: #304C61;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 60px;
+    width: 80%;
+}
+
+.blog-title h4 {
+    color: #5B5B5B;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: normal;
+    padding: 22px 0;
+}
+
+.blog-content {
+    width: 70%;
+    color: #272727;
+}
+
+.blog-content p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.blog-content span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.card-author {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+}
+
+.profile-author {
+    display: flex;
+    align-items: center;
+    padding: 44px 0;
+}
+
+.title-author {
+    padding-left: 8px;
+
+}
+
+.title-author h5 {
+    font-size: 22px;
+    color: #304C61;
+}
+
+.title-author p {
+    font-size: 18px;
+    color: #B0B0B0;
+}
+
+.share-section a {
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+#tootlips {
+    position: absolute;
+    right: -160px;
+    margin-top: -32px;
+    color: #5e5e5e;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: #dadada;
+    font-size: 14px;
+    display: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.116);
+}
+
+.smooth-transition {
+    animation: fadeIn 0.3s linear;
+}
+
+.smooth-transition-out {
+    animation: fadeOut 0.3s linear;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 92%;
+    }
+
+    .blog-title h1 {
+        font-size: 34px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    .blog-title h4 {
+        font-size: 18px;
+        padding: 12px 0;
+    }
+
+    .blog-content {
+        width: 100%;
+    }
+
+    .card-author {
+        width: 100%;
+    }
+
+    .title-author h5 {
+        font-size: 14px;
+    }
+
+    .title-author p {
+        font-size: 12px;
+    }
+
+    #tootlips {
+        position: absolute;
+        right: 8px;
+        margin-top: 8px;
+        color: #5e5e5e;
+        border-radius: 4px;
+        padding: 8px;
+        background-color: #dadada;
+        font-size: 14px;
+        display: none;
+    }
+
+}

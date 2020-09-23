@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo-icn.svg" type="image/svg">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <title>Edumic | Education Through Pandemic</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigasi Bar -->
+        <nav>
+            <div class="nav-brand">
+                <img src="../assets/img/logo-text.svg" alt="">
+            </div>
+            <div class="nav-items" id="nav">
+
+                <div class="nav-links">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../class/" class="nav-link">Class</a>
+                    <a href="../blogs/" class="nav-link">Blog</a>
+                    <a href="../gallery/" class="nav-link">Gallery</a>
+                    <a href="../about/" class="nav-link active">About</a>
+                </div>
+
+                <button class="btn-secondary">
+                    Try Free
+                </button>
+            </div>
+
+            <div class="burger-toggle" id="toggle-nav">
+                <div class="line l2"></div>
+                <div class="line"></div>
+                <div class="line l2"></div>
+            </div>
+        </nav>
+
+        <div class="about mt-nav">
+            <h1>About Edumic</h1>
+            <p>Edumic adalah sebuah website edukasi tentang bagaimana cara beradaptasi
+                di era new normal ini. Konten-kontennya berisi blog, e-course dan hal
+                edukatif lainnya. Tujuan utama dari Edumic ini adalah kami ingin membuat
+                sebuah inovasi baru dalam perkembangan industri dengan cara membuat
+                website edukatif agar meningkatkan kualitas SDM serta mengikuti era
+                Digital 4.0.</p>
+        </div>
+
+        <div class="row-title">
+            <h1>Edumic Developer</h1>
+            <p>Developer hebat dibalik terciptanya Edumic</p>
+        </div>
+        <div class="card-row">
+            <div class="col-card">
+                <div class="img-mentor">
+                    <img src="../assets/img/mentor/alvin.png" alt="">
+                </div>
+                <h3>Alvin Adisatria</h3>
+                <p>Content Creator, UI Designer, UX Engineer & Front-End Developer</p>
+                <button class="btn-primary" style="width: 100%; margin-top: 12px;"><a
+                        href="./mentor/alvin-adisatria.html" style="text-decoration: none; color: #fff;">See
+                        Profile</a></button>
+            </div>
+            <div class="col-card">
+                <div class="img-mentor">
+                    <img src="../assets/img/mentor/ahmad.png" alt="">
+                </div>
+                <h3>Ahmad Alfarizki</h3>
+                <p>Full-Stack Web Developer, UI & UX Designer</p>
+                <button class="btn-primary" style="width: 100%; margin-top: 12px;"><a
+                        href="./mentor/ahmad-alfarizki.html" style="text-decoration: none; color: #fff;">See
+                        Profile</a></button>
+            </div>
+            <div class="col-card">
+                <div class="img-mentor">
+                    <img src="../assets/img/mentor/miftah.png" alt="">
+                </div>
+                <h3>Miftah Apriliandi M</h3>
+                <p>Video Editor, UI Designer & Interaction Designer</p>
+                <button class="btn-primary" style="width: 100%; margin-top: 12px;"><a
+                        href="./mentor/miftah-apriliandi.html" style="text-decoration: none; color: #fff;">See
+                        Profile</a></button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <!-- To Up -->
+    <div class="ellipse" id="pop-scroll-up">
+        <img src="../assets/img/arrow-left.svg" alt="up" style="transform: rotate(90deg);">
+    </div>
+    <footer>
+        2020 All Right Reserved PandeCoder
+    </footer>
+
+
+
+
+
+    <script src="../assets/script/app.js"></script>
+    <script>
+        window.addEventListener('scroll', function (e) {
+            const scrollBtn = document.getElementById("pop-scroll-up");
+            scrollBtn.addEventListener('click', function () {
+                window.location.href = "#"
+            })
+            yPos = window.scrollY;
+
+            if (yPos > 600) {
+                scrollBtn.style.display = "flex"
+            } else {
+                scrollBtn.style.display = "none"
+            }
+        });
+    </script>
+</body>
+
+</html>
